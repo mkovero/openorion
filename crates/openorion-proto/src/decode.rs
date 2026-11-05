@@ -367,7 +367,9 @@ pub fn decode_reply(get: &Get, body: &[u8]) -> Result<GetReply, ProtoError> {
             // Pairs until type 0. Types missing from the enum (10, 40, 49
             // on the wire, count 0) are skipped.
             let v = body
-                .chunks_exact(2)
+                .as_chunks::<2>()
+                .0
+                .iter()
                 .take_while(|p| p[0] != 0)
                 .filter_map(|p| AfxType::try_from(p[0]).ok().map(|t| (t, p[1])))
                 .collect();
