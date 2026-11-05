@@ -1,0 +1,50 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/openorion-proto",
+    "crates/openorion-hid",
+    "crates/openorion-sim",
+    "crates/openorion-core",
+    "crates/openorion-ipc",
+    "crates/openoriond",
+    "crates/openorion-cli",
+    "crates/openorion-ui",
+    "crates/openorion-jack",
+    "crates/openorion-control",
+    "crates/openorion-remote",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/mkovero/openorion"
+# Not on crates.io: keeps a stray `cargo publish` from taking names.
+publish = false
+
+# Shared dependency versions. Crates opt in with `foo.workspace = true`;
+# a dependency listed here costs nothing until a crate uses it.
+[workspace.dependencies]
+openorion-proto = { path = "crates/openorion-proto" }
+openorion-hid = { path = "crates/openorion-hid" }
+openorion-sim = { path = "crates/openorion-sim" }
+openorion-core = { path = "crates/openorion-core" }
+openorion-ipc = { path = "crates/openorion-ipc" }
+openorion-control = { path = "crates/openorion-control" }
+
+thiserror = "2.0.18"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+tokio = { version = "1.53", features = ["rt-multi-thread", "net", "sync", "time", "macros", "io-util", "signal"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+clap = { version = "4.6", features = ["derive"] }
+libc = "0.2.190"
+eframe = "0.36"
+egui = "0.36"
+jack = "0.13"
+proptest = "1.11"
+tempfile = "3.27"
+rosc = "0.11"
+midir = "0.10"

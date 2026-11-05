@@ -1,0 +1,31 @@
+[Unit]
+Description=openorion daemon (Antelope Orion32 HD control)
+
+[Service]
+Type=simple
+# packaging/install.sh puts openoriond here; adjust if installed elsewhere.
+ExecStart=%h/.local/bin/openoriond --foreground
+Restart=on-failure
+RestartSec=2
+
+# Hardening. /dev stays visible (hidraw and /dev/bus/usb are needed).
+# ProtectHome also covers /run/user, so the runtime dir (%t, where the
+# socket and lock live) is made writable again. StateDirectory gives the
+# daemon ~/.local/state/openorion (the AFX copy, afx.json) read-write.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%t
+StateDirectory=openorion
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+RestrictAddressFamilies=AF_UNIX
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=default.target

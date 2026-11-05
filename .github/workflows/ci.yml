@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: System libraries (JACK headers for the jack feature)
+        run: sudo apt-get update && sudo apt-get install -y pkg-config libjack-jackd2-dev libasound2-dev
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Format
+        run: cargo fmt --all --check
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings
+      - name: Clippy (JACK)
+        run: cargo clippy -p openorion-jack --features jack --all-targets --locked -- -D warnings
+      - name: Build the daemon (the CLI tests use it)
+        run: cargo build --locked -p openoriond
+      - name: Test
+        run: cargo test --workspace --locked

@@ -1,0 +1,27 @@
+[package]
+name = "openorion-core"
+description = "Session: state cache, request queue, sync, events"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+openorion-proto.workspace = true
+openorion-hid.workspace = true
+openorion-ipc.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+# openorion-sim is not a dev-dependency yet: WP5 is written in parallel. The
+# tests use their own scripted transport (tests/support/); the sim can be
+# plugged in later because Session takes any `Box<dyn Transport>`.
+[dev-dependencies]
+openorion-sim.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true

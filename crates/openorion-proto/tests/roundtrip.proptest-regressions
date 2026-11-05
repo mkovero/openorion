@@ -1,0 +1,9 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc d53434c87d3d4cf13e669302d88f700d5c5f22e04ae79f6c5eacb94160076d2f # shrinks to set = AfxEq { inst: 0, band: 0, value: EqBand { freq: 20, q: 0, gain: 0, ftype: LowShelf } }
+cc faeb2af46014659166eecbeff901b705cb08b27745bc74ee399541262aa188d9 # shrinks to set = AfxEq { inst: 0, band: 1, value: EqBand { freq: 20, q: 0, gain: 0, ftype: LowShelf } }
+cc 4e9b41a28d0a5e11df58a95ef20e4e0f41140d4ed3d5182323603c6548530545 # shrinks to set = AfxEq { inst: 0, band: 0, value: EqBand { freq: 801, q: 0, gain: 0, ftype: LowShelf } }

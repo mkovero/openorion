@@ -1,0 +1,32 @@
+[package]
+name = "openorion-jack"
+description = "openorion-jack: JACK integration client"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[features]
+# Links libjack. Off by default so `cargo test` runs without JACK.
+jack = ["dep:jack"]
+
+[dependencies]
+openorion-proto.workspace = true
+openorion-ipc.workspace = true
+serde_json.workspace = true
+clap.workspace = true
+libc.workspace = true
+jack = { workspace = true, optional = true }
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[[example]]
+name = "loopback"
+required-features = ["jack"]
+
+[[example]]
+name = "sinewatch"
+required-features = ["jack"]

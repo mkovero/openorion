@@ -1,0 +1,173 @@
+firmware 1.50
+passport name=Orion32HD serial=0000000000000 hw=3.1 birth=1524573936
+registered=1
+== status (0x73)
+  preset=0 power=1 muted=0 usb_mode=0 updated=0
+  flags: atomic adat
+  rate=96k source=Oven/Atomic ext_freq=96000 Hz
+  osc freq_l=0 freq_r=0 level=2 mute_l=0 mute_r=1
+  smux_in=0 smux_out=0 spdif_src=0 brightness=0 adat_ch=8 madi_ch=32
+  main vol=-0 dB mute=0  line vol=-0 dB mute=0  monitor_trim=9
+  spdif_gains=0,0 usb_ch=64 usb3_max=64 usb2_max=8 usb_cfg=0xbb stream=0xe0 fw_rev=0x0103
+  hdx_control=0 hdx_emu=3,3 loop_sync=0x01 pm_bank_src=[7, 22, 3, 0]
+== routing
+  LINE OUT: 17-18 <- ADAT IN 3-4
+  MONITOR: 1-2 <- MIX L/R1 1-2
+  USB REC 1-32: 1-2 <- ADAT IN 1-2; 10 <- ADAT IN 1
+  USB REC 33-64: 1 <- ADAT IN 1
+  MADI OUT 1-32: 1-8 <- LINE IN 1-8; 9-10 <- ADAT IN 1-2; 13-14 <- ADAT IN 9-10; 15-16 <- MADI IN 1-32 1-2; 17-18 <- MADI IN 1-32 1-2; 19-21 <- LINE IN 17-19; 23-30 <- LINE IN 21-28
+  MADI OUT 33-64: 1-32 <- HDX 2 PLAY 1-32
+  HDX 1 REC: (all muted)
+  HDX 2 REC: (all muted)
+  ADAT OUT: 1-2 <- MIX L/R3 1-2; 3-4 <- ADAT IN 9-10; 5-8 <- HDX 1 PLAY 5-8; 9-10 <- MIX L/R2 1-2; 13-16 <- HDX 1 PLAY 13-16
+  S/PDIF OUT: 1-2 <- MIX L/R1 1-2
+  AFX IN: 1 <- LINE IN 20
+  MIX CH1: 1-8 <- LINE IN 1-8; 9-10 <- ADAT IN 1-2; 13-16 <- ADAT IN 9-12; 17-18 <- MADI IN 1-32 1-2; 19-21 <- LINE IN 17-19; 23-30 <- LINE IN 21-28
+  MIX CH2: 1-4 <- ADAT IN 1-4; 5-6 <- MADI IN 1-32 1-2; 9-10 <- ADAT IN 11-12; 11 <- LINE IN 3
+  MIX CH3: 3-4 <- ADAT IN 11-12; 11 <- LINE IN 3
+  MIX CH4: (all muted)
+== mixer 1
+  master level=-0 pan=+0 mute=0 solo=0 send=96
+  ch1  level=-0 pan=-30 mute=0 solo=0 send=95 link=1
+  ch2  level=-0 pan=+30 mute=0 solo=0 send=95 link=1
+  ch3  level=-0 pan=+0 mute=1 solo=0 send=95 link=0
+  ch4  level=-0 pan=+0 mute=0 solo=0 send=95 link=0
+  ch5  level=-0 pan=-30 mute=1 solo=0 send=95 link=1
+  ch6  level=-0 pan=+30 mute=1 solo=0 send=95 link=1
+  ch7  level=-0 pan=-30 mute=1 solo=0 send=95 link=1
+  ch8  level=-0 pan=+30 mute=1 solo=0 send=95 link=1
+  ch9  level=-0 pan=-30 mute=0 solo=0 send=95 link=0
+  ch10 level=-0 pan=+30 mute=0 solo=0 send=95 link=0
+  ch11 level=-0 pan=+0 mute=1 solo=0 send=95 link=0
+  ch12 level=-0 pan=+0 mute=1 solo=0 send=95 link=0
+  ch13 level=-0 pan=+0 mute=1 solo=0 send=95 link=0
+  ch14 level=-0 pan=+0 mute=0 solo=0 send=95 link=0
+  ch15 level=-0 pan=-30 mute=1 solo=0 send=95 link=1
+  ch16 level=-0 pan=+30 mute=1 solo=0 send=95 link=1
+  ch17 level=-0 pan=-30 mute=0 solo=0 send=95 link=1
+  ch18 level=-0 pan=+30 mute=0 solo=0 send=95 link=1
+  ch19 level=-0 pan=+0 mute=1 solo=0 send=95 link=1
+  ch20 level=-0 pan=+0 mute=1 solo=0 send=95 link=1
+  ch21 level=-0 pan=-30 mute=1 solo=0 send=95 link=1
+  ch22 level=-0 pan=+0 mute=1 solo=0 send=95 link=1
+  ch23 level=-0 pan=-30 mute=1 solo=0 send=95 link=1
+  ch24 level=-0 pan=+30 mute=1 solo=0 send=95 link=1
+  ch25 level=-0 pan=+0 mute=1 solo=0 send=95 link=1
+  ch26 level=-0 pan=+0 mute=1 solo=0 send=95 link=1
+  ch27 level=-0 pan=-30 mute=1 solo=0 send=95 link=1
+  ch28 level=-0 pan=+30 mute=1 solo=0 send=95 link=1
+  ch29 level=-0 pan=+0 mute=1 solo=0 send=95 link=1
+  ch30 level=-0 pan=+0 mute=1 solo=0 send=95 link=1
+  ch31 level=-0 pan=-30 mute=1 solo=0 send=95 link=1
+  ch32 level=-0 pan=+30 mute=1 solo=0 send=95 link=1
+== mixer 2
+  master level=-0 pan=+0 mute=0 solo=0 send=96
+  ch1  level=-0 pan=-30 mute=0 solo=0 send=0 link=1
+  ch2  level=-0 pan=+30 mute=0 solo=0 send=0 link=1
+  ch3  level=-0 pan=-30 mute=0 solo=0 send=0 link=1
+  ch4  level=-0 pan=+30 mute=0 solo=0 send=0 link=1
+  ch5  level=-0 pan=-30 mute=0 solo=0 send=0 link=1
+  ch6  level=-0 pan=+30 mute=0 solo=0 send=0 link=1
+  ch7  level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch8  level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch9  level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch10 level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch11 level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch12 level=-0 pan=+30 mute=0 solo=0 send=0 link=0
+  ch13 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch14 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch15 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch16 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch17 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch18 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch19 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch20 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch21 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch22 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch23 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch24 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch25 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch26 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch27 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch28 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch29 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch30 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch31 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch32 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+== mixer 3
+  master level=-0 pan=+0 mute=0 solo=0 send=96
+  ch1  level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch2  level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch3  level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch4  level=-0 pan=+0 mute=0 solo=0 send=0 link=0
+  ch5  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch6  level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch7  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch8  level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch9  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch10 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch11 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch12 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch13 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch14 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch15 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch16 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch17 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch18 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch19 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch20 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch21 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch22 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch23 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch24 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch25 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch26 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch27 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch28 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch29 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch30 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch31 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch32 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+== mixer 4
+  master level=-0 pan=+0 mute=0 solo=0 send=96
+  ch1  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch2  level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch3  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch4  level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch5  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch6  level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch7  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch8  level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch9  level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch10 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch11 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch12 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch13 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch14 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch15 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch16 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch17 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch18 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch19 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch20 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch21 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch22 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch23 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch24 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch25 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch26 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch27 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch28 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch29 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch30 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+  ch31 level=-0 pan=-30 mute=0 solo=0 send=96 link=0
+  ch32 level=-0 pan=+30 mute=0 solo=0 send=96 link=0
+== reverb
+  mixer_id=0 room_size=68 color=12 predelay=0 density=100 early_ref_gain=12 late_ref_delay=116 richness=25 reverb_time=23 reverb_level=25 on=0
+== trims
+  LINE_OUT control=ALL dBu=[16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+  LINE_IN control=INDIVIDUAL dBu=[15, 15, 15, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 10, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+== afx instances (type:count) 1:16 2:16 3:0 4:0 5:16 6:16 7:16 8:16 9:16 10:0 11:16 12:16 13:16 14:16 15:16 16:16 17:16 18:16 19:16 20:16 21:16 22:16 23:16 24:16 25:16 26:16 27:0 28:16 29:16 30:16 31:16 32:16 33:16 34:16 35:16 36:16 37:16 38:16 39:12 40:0 41:16 42:16 43:0 44:0 45:0 46:0 47:0 48:0 49:0 50:0
+== afx order (empty)
+== afx links [0, 0, 0, 0, 0, 0, 0, 0]
+== hdx delays [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

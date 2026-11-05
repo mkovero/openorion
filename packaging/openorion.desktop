@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=openorion
+GenericName=Audio Interface Mixer
+Comment=Control the Antelope Orion32 HD without the vendor software
+Exec=openorion-ui
+Icon=audio-card
+Terminal=false
+Categories=AudioVideo;Audio;Mixer;
+Keywords=openorion;orion;antelope;audio;mixer;

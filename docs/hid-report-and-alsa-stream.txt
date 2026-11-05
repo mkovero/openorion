@@ -1,0 +1,31 @@
+00000000: 06a0 ff09 01a1 0109 02a1 0006 a1ff 0903  ................
+00000010: 0904 1580 257f 3500 45ff 7508 9640 0181  ....%.5.E.u..@..
+00000020: 0209 0509 0615 8025 7f35 0045 ff75 0896  .......%.5.E.u..
+00000030: 4001 9102 c0c0                           @.....
+Antelope Audio Orion32HD at usb-0000:08:00.3-2, super speed : USB Audio
+
+Playback:
+  Status: Stop
+  Interface 1
+    Altset 1
+    Format: S24_3LE
+    Channels: 64
+    Endpoint: 0x01 (1 OUT) (ASYNC)
+    Rates: 32000, 44100, 48000, 88200, 96000, 176400, 192000
+    Data packet interval: 125 us
+    Bits: 24
+    Sync Endpoint: 0x81 (1 IN)
+    Sync EP Interface: 2
+    Sync EP Altset: 1
+    Implicit Feedback Mode: Yes
+
+Capture:
+  Status: Stop
+  Interface 2
+    Altset 1
+    Format: S24_3LE
+    Channels: 64
+    Endpoint: 0x81 (1 IN) (ASYNC)
+    Rates: 32000, 44100, 48000, 88200, 96000, 176400, 192000
+    Data packet interval: 125 us
+    Bits: 24

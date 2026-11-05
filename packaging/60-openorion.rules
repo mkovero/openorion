@@ -1,0 +1,18 @@
+# openorion: access to the Antelope Orion32 HD (USB 23e5:a210) control channel.
+# Install to /etc/udev/rules.d/60-openorion.rules. It sorts before
+# 73-seat-late.rules, which turns the uaccess tag into per-seat ACLs.
+# Only permissions and tags are set; no driver is unbound, so snd-usb-audio
+# keeps working.
+
+ACTION=="remove", GOTO="openorion_end"
+
+# (a) HID control node (/dev/hidraw*). ATTRS walks up to the parent USB device.
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="23e5", ATTRS{idProduct}=="a210", \
+  GROUP="audio", MODE="0660", TAG+="uaccess"
+
+# (b) The USB device node (/dev/bus/usb/BBB/DDD). Needed for the USBDEVFS_RESET
+# ioctl that the tool issues once after power-up.
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="23e5", ATTR{idProduct}=="a210", \
+  GROUP="audio", MODE="0660", TAG+="uaccess"
+
+LABEL="openorion_end"

@@ -1,0 +1,17 @@
+[package]
+name = "openorion-proto"
+description = "Antelope Orion32 HD control protocol: model, encode, decode (no I/O)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+proptest.workspace = true

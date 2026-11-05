@@ -1,0 +1,19 @@
+[package]
+name = "openorion-hid"
+description = "HID transport for the Orion32 HD (Linux hidraw)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+openorion-proto.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+libc.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

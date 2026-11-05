@@ -1,0 +1,36 @@
+[Unit]
+Description=openorion remote (MIDI and OSC control for openoriond)
+After=openoriond.service
+Wants=openoriond.service
+
+[Service]
+Type=simple
+# packaging/install.sh puts openorion-remote here; adjust if installed elsewhere.
+# The config is ~/.config/openorion/remote.json (openorion-remote --help).
+ExecStart=%h/.local/bin/openorion-remote
+Restart=on-failure
+RestartSec=2
+
+# Hardening. /dev stays visible: ALSA MIDI is the /dev/snd/seq character
+# device (access through the audio group or the seat). ProtectHome also
+# covers /run/user, so the runtime dir (%t, the daemon socket) is made
+# writable again. ConfigurationDirectory gives ~/.config/openorion
+# read-write (learn mode saves remote.json there). Networking is for OSC
+# (UDP); ALSA sequencer needs no extra address family.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%t
+ConfigurationDirectory=openorion
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=default.target

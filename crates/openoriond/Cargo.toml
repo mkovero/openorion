@@ -1,0 +1,25 @@
+[package]
+name = "openoriond"
+description = "openorion daemon: owns the device, serves clients"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+openorion-proto.workspace = true
+openorion-hid.workspace = true
+openorion-sim.workspace = true
+openorion-core.workspace = true
+openorion-ipc.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

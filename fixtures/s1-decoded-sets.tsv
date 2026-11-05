@@ -1,0 +1,50 @@
+time	action	payload	pid	fields
+1793043943.904838	mixer subtab: MIXER 4	50 02 03	16	bank=2 source=3
+1793043964.124888	m4 ch1 MUTE on	d1 05 03 01 00 42 00	17	mixer=3 channel=1 level=0 pan=2 mute=True solo=False send=0
+1793043972.912961	m4 ch1 MUTE off	d1 05 03 01 00 02 00	17	mixer=3 channel=1 level=0 pan=2 mute=False solo=False send=0
+1793043981.924836	m4 ch1 SOLO on	d1 05 03 01 00 82 00	17	mixer=3 channel=1 level=0 pan=2 mute=False solo=True send=0
+1793043990.828903	m4 ch1 SOLO off	d1 05 03 01 00 02 00	17	mixer=3 channel=1 level=0 pan=2 mute=False solo=False send=0
+1793043999.964859	m4 ch1 LINK toggle (unlink)	d1 05 03 01 00 02 00	17	mixer=3 channel=1 level=0 pan=2 mute=False solo=False send=0
+1793043999.968806	m4 ch1 LINK toggle (unlink)	93 03 30 01	19	peripheral=3 channel=48 linked=1
+1793044008.640831	m4 ch1 LINK toggle (relink)	d1 05 03 01 00 02 00	17	mixer=3 channel=1 level=0 pan=2 mute=False solo=False send=0
+1793044008.644882	m4 ch1 LINK toggle (relink)	93 03 30 00	19	peripheral=3 channel=48 linked=0
+1793044018.668848	m4 ch1 FADER drag down 100px	d1 05 03 01 06 02 00	17	mixer=3 channel=1 level=6 pan=2 mute=False solo=False send=0
+1793044019.772924	m4 ch1 FADER drag down 100px	d1 05 03 01 0c 02 00	17	mixer=3 channel=1 level=12 pan=2 mute=False solo=False send=0
+1793044020.776904	m4 ch1 FADER drag down 100px	d1 05 03 01 12 02 00	17	mixer=3 channel=1 level=18 pan=2 mute=False solo=False send=0
+1793044021.776888	m4 ch1 FADER drag down 100px	d1 05 03 01 18 02 00	17	mixer=3 channel=1 level=24 pan=2 mute=False solo=False send=0
+1793044022.892833	m4 ch1 FADER drag down 100px	d1 05 03 01 1e 02 00	17	mixer=3 channel=1 level=30 pan=2 mute=False solo=False send=0
+1793044024.008870	m4 ch1 FADER drag down 100px	d1 05 03 01 24 02 00	17	mixer=3 channel=1 level=36 pan=2 mute=False solo=False send=0
+1793044025.116850	m4 ch1 FADER drag down 100px	d1 05 03 01 2a 02 00	17	mixer=3 channel=1 level=42 pan=2 mute=False solo=False send=0
+1793044026.120862	m4 ch1 FADER drag down 100px	d1 05 03 01 30 02 00	17	mixer=3 channel=1 level=48 pan=2 mute=False solo=False send=0
+1793044036.372869	m4 ch1 FADER drag up 100px	d1 05 03 01 2a 02 00	17	mixer=3 channel=1 level=42 pan=2 mute=False solo=False send=0
+1793044037.476855	m4 ch1 FADER drag up 100px	d1 05 03 01 24 02 00	17	mixer=3 channel=1 level=36 pan=2 mute=False solo=False send=0
+1793044038.704839	m4 ch1 FADER drag up 100px	d1 05 03 01 1e 02 00	17	mixer=3 channel=1 level=30 pan=2 mute=False solo=False send=0
+1793044039.824862	m4 ch1 FADER drag up 100px	d1 05 03 01 18 02 00	17	mixer=3 channel=1 level=24 pan=2 mute=False solo=False send=0
+1793044040.932740	m4 ch1 FADER drag up 100px	d1 05 03 01 12 02 00	17	mixer=3 channel=1 level=18 pan=2 mute=False solo=False send=0
+1793044042.044809	m4 ch1 FADER drag up 100px	d1 05 03 01 0c 02 00	17	mixer=3 channel=1 level=12 pan=2 mute=False solo=False send=0
+1793044043.156870	m4 ch1 FADER drag up 100px	d1 05 03 01 06 02 00	17	mixer=3 channel=1 level=6 pan=2 mute=False solo=False send=0
+1793044044.272800	m4 ch1 FADER drag up 100px	d1 05 03 01 00 02 00	17	mixer=3 channel=1 level=0 pan=2 mute=False solo=False send=0
+1793044053.632856	m4 ch1 PAN wheel up 3	d1 05 03 01 00 03 00	17	mixer=3 channel=1 level=0 pan=3 mute=False solo=False send=0
+1793044055.964857	m4 ch1 PAN wheel up 3	d1 05 03 01 00 04 00	17	mixer=3 channel=1 level=0 pan=4 mute=False solo=False send=0
+1793044058.188785	m4 ch1 PAN wheel up 3	d1 05 03 01 00 05 00	17	mixer=3 channel=1 level=0 pan=5 mute=False solo=False send=0
+1793044067.328812	m4 ch1 PAN wheel down 3	d1 05 03 01 00 04 00	17	mixer=3 channel=1 level=0 pan=4 mute=False solo=False send=0
+1793044069.548855	m4 ch1 PAN wheel down 3	d1 05 03 01 00 03 00	17	mixer=3 channel=1 level=0 pan=3 mute=False solo=False send=0
+1793044071.996826	m4 ch1 PAN wheel down 3	d1 05 03 01 00 02 00	17	mixer=3 channel=1 level=0 pan=2 mute=False solo=False send=0
+1793044081.696829	m4 MASTER drag down 80px	d1 05 03 00 05 00 00	17	mixer=3 channel=0 level=5 pan=0 mute=False solo=False send=0
+1793044082.800836	m4 MASTER drag down 80px	d1 05 03 00 0a 00 00	17	mixer=3 channel=0 level=10 pan=0 mute=False solo=False send=0
+1793044083.916798	m4 MASTER drag down 80px	d1 05 03 00 0f 00 00	17	mixer=3 channel=0 level=15 pan=0 mute=False solo=False send=0
+1793044085.028898	m4 MASTER drag down 80px	d1 05 03 00 14 00 00	17	mixer=3 channel=0 level=20 pan=0 mute=False solo=False send=0
+1793044086.032923	m4 MASTER drag down 80px	d1 05 03 00 19 00 00	17	mixer=3 channel=0 level=25 pan=0 mute=False solo=False send=0
+1793044087.144783	m4 MASTER drag down 80px	d1 05 03 00 1e 00 00	17	mixer=3 channel=0 level=30 pan=0 mute=False solo=False send=0
+1793044088.148842	m4 MASTER drag down 80px	d1 05 03 00 23 00 00	17	mixer=3 channel=0 level=35 pan=0 mute=False solo=False send=0
+1793044089.260834	m4 MASTER drag down 80px	d1 05 03 00 28 00 00	17	mixer=3 channel=0 level=40 pan=0 mute=False solo=False send=0
+1793044099.292838	m4 MASTER drag up 80px	d1 05 03 00 23 00 00	17	mixer=3 channel=0 level=35 pan=0 mute=False solo=False send=0
+1793044100.288803	m4 MASTER drag up 80px	d1 05 03 00 1e 00 00	17	mixer=3 channel=0 level=30 pan=0 mute=False solo=False send=0
+1793044101.400846	m4 MASTER drag up 80px	d1 05 03 00 19 00 00	17	mixer=3 channel=0 level=25 pan=0 mute=False solo=False send=0
+1793044102.512838	m4 MASTER drag up 80px	d1 05 03 00 14 00 00	17	mixer=3 channel=0 level=20 pan=0 mute=False solo=False send=0
+1793044103.628843	m4 MASTER drag up 80px	d1 05 03 00 0f 00 00	17	mixer=3 channel=0 level=15 pan=0 mute=False solo=False send=0
+1793044104.740806	m4 MASTER drag up 80px	d1 05 03 00 0a 00 00	17	mixer=3 channel=0 level=10 pan=0 mute=False solo=False send=0
+1793044105.964842	m4 MASTER drag up 80px	d1 05 03 00 05 00 00	17	mixer=3 channel=0 level=5 pan=0 mute=False solo=False send=0
+1793044107.080841	m4 MASTER drag up 80px	d1 05 03 00 00 00 00	17	mixer=3 channel=0 level=0 pan=0 mute=False solo=False send=0
+1793044116.108873	m4 MASTER MUTE on	d1 05 03 00 00 40 00	17	mixer=3 channel=0 level=0 pan=0 mute=True solo=False send=0
+1793044125.232743	m4 MASTER MUTE off	d1 05 03 00 00 00 00	17	mixer=3 channel=0 level=0 pan=0 mute=False solo=False send=0
